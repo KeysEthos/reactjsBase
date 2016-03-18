@@ -1,0 +1,209 @@
+@import '../../bower_components/bootstrap/less/bootstrap';
+@import '../../bower_components/toastr/toastr';
+@import (less) '../../bower_components/magnific-popup/dist/magnific-popup.css';
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 220px;
+  -webkit-font-smoothing: antialiased;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  color: #fff;
+  background-color: #3b3f51;
+}
+.badge-danger {
+  color: #fff;
+  background-color: #f05150;
+}
+.radio {
+  margin-bottom: 10px;
+  margin-top: 10px;
+  padding-left: 20px;
+}
+
+.radio-inline + .radio-inline {
+  margin-top: 10px;
+}
+
+.radio-inline,
+.checkbox-inline {
+  cursor: default;
+}
+
+.radio label {
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+  padding-left: 5px;
+  margin-right: 10px;
+}
+
+.radio label:before {
+  content: '';
+  display: inline-block;
+  width: 17px;
+  height: 17px;
+  margin-left: -20px;
+  position: absolute;
+  left: 0;
+  background-color: #fff;
+  border: 1px solid #d0d0d0;
+}
+
+.radio label:before {
+  bottom: 2.5px;
+  border-radius: 100px;
+  transition: border .2s 0s cubic-bezier(.45,.04,.22,1.30);
+}
+
+.radio input[type=radio]:checked + label:before {
+  border-width: 5px;
+}
+
+.radio input[type=radio] {
+  display: none;
+}
+
+.radio input[type=radio][disabled] + label {
+  opacity: .65;
+}
+
+.radio input[type=radio]:checked + label:before {
+  border-color: #10cebd;
+}
+
+.animated {
+  animation-fill-mode: both;
+  animation-duration: 1s;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fadeInUp {
+  animation-name: fadeInUp;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  animation-name: fadeIn;
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.fadeOut {
+  animation-name: fadeOut;
+}
+
+@keyframes flipInX {
+  0% {
+    transform: perspective(800px) rotate3d(1,0,0,90deg);
+    transition-timing-function: ease-in;
+    opacity: 0;
+  }
+
+  40% {
+    transform: perspective(800px) rotate3d(1,0,0,-20deg);
+    transition-timing-function: ease-in;
+  }
+
+  60% {
+    transform: perspective(800px) rotate3d(1,0,0,10deg);
+    opacity: 1;
+  }
+
+  80% {
+    transform: perspective(800px) rotate3d(1,0,0,-5deg);
+  }
+
+  100% {
+    transform: perspective(800px);
+  }
+}
+
+.flipInX {
+  backface-visibility: visible !important;
+  animation-name: flipInX;
+}
+
+@keyframes flipOutX {
+  0% {
+    transform: perspective(400px);
+  }
+
+  30% {
+    transform: perspective(400px) rotate3d(1,0,0,-20deg);
+    opacity: 1;
+  }
+
+  100% {
+    transform: perspective(400px) rotate3d(1,0,0,90deg);
+    opacity: 0;
+  }
+}
+
+.flipOutX {
+  animation-name: flipOutX;
+  backface-visibility: visible !important;
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 1;
+  }
+  16.666% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes shake {
+  0%, 100% {
+    transform: translate3d(0, 0, 0);
+  }
+
+  10%, 30%, 50%, 70%, 90% {
+    transform: translate3d(-10px, 0, 0);
+  }
+
+  20%, 40%, 60%, 80% {
+    transform: translate3d(10px, 0, 0);
+  }
+}
+
+.shake {
+  animation-name: shake;
+}
