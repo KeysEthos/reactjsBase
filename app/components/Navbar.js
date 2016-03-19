@@ -56,22 +56,20 @@ class Navbar extends React.Component {
 
   render() {
     return (
-      <nav className='navbar navbar-default navbar-static-top'>
-        <div className='navbar-header'>
-          <button type='button' className='navbar-toggle collapsed' data-toggle='collapse' data-target='#navbar'>
-            <span className='sr-only'>Toggle navigation</span>
-            <span className='icon-bar'></span>
-            <span className='icon-bar'></span>
-            <span className='icon-bar'></span>
-          </button>
-          <Link to='/' className='navbar-brand'>
-            Buzz
-            <span className='badge badge-up badge-danger'>{this.state.onlineUsers}</span>
-          </Link>
-        </div>
-          <ul className='nav navbar-nav'>
-            <li><Link to='/add'>Add</Link></li>
-          </ul>
+      <nav className='navbar navbar-sexy'>
+        <div className='navbar-left'>
+	    <div className='navbar-item home_bee'><Link to='/'>
+                <img src='https://s3-us-west-2.amazonaws.com/buzzm/imgs/buzz_logo/main.png' />
+            </Link></div>
+	    <div className='navbar-item'><Link to='/about'>About</Link></div>
+	    <div className='navbar-item'><Link to='/blog'>Blog</Link></div>
+	    <div className='navbar-item'><Link to='/faq'>FAQ</Link></div>
+	</div>
+	<div classname='navbar-right'>
+            <div className='navbar-item'>
+		<Link to='/add'><a className='button is-success'>Sign Up</a></Link>
+	    </div>
+	</div>	    
       </nav>
     );
   }
