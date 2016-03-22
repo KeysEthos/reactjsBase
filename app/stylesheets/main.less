@@ -20,7 +20,7 @@ footer {
 }
 /******************************** NavBar  **************************************/
 .navbar-sexy {
-	background-color:rgba(255,255,255,0.7);
+	background-color:rgba(42, 53, 135, 0.9);
 	min-height:60px;
 	border:1px solid transparent;
 	position:relative;
@@ -28,9 +28,21 @@ footer {
 }
 .home_bee {
 	max-height: 50px;
-	max-width: 40px;
-	margin: 0;
+	width: 60px;
+	margin: 0 20px 0 0;
 	padding: 0;
+	text-align:center;
+	background-color:rgba(255,255,255,0.8);
+	border-radius:5px;
+	img {
+		max-width:40px;
+		margin:0;
+		padding:0;
+	}
+	&:hover {	
+		background-color:#fce473;
+		border-radius:5px;
+	}
 }
 .navbar-left .navbar-item:not(:last-child), .navbar-right .navbar-item:not(:last-child) {
     margin-right: 35px;
@@ -38,6 +50,9 @@ footer {
 .navbar-item {
 	font-size:16px;
 	font-weight:bolder;
+	a { &:hover {
+		color:#fce473;
+	 }}
 }
 /******************************** MAIN CONTAINER **************************************/
 .background-image {
@@ -57,16 +72,139 @@ footer {
 	text-align:center;
 	min-height:500px;
 	width:90%;
-	background-color:rgba(255,255,255,0.3);
+	background-color:rgba(255, 255, 255, 0.4);
 }
 .main_center_image {
-	margin-top:50px;
 	max-height:220px;
 } 
 .main_title {
 	padding-top:25px;
 	color:#2a3587;
 	font-weight:bolder;
+}
+.sub_question {
+	color:#2a3587;
+        font-weight:bolder;
+}
+.sub_title {
+	font-weight:bold;
+	padding: 0 40px;
+}
+.main_button_group a {
+	margin:0 15px;
+}
+/********************************** About Container  *****************************/
+.about_title {
+	margin-top:-20px;
+	padding:10px 0;
+}
+.about_title_two {
+	padding:10px 0;
+}
+.about_text_structure {
+	border: 1px solid #fce473;
+	padding:15px 20px;
+	.notification {
+		font-size: 18px;
+        	text-align: center;
+        	color: rgba(0,0,0,0.8);
+	}
+}
+.iphone_about {
+	text-align:center;
+.female_group,
+.male_group {
+	max-height:500px;
+	margin-top:80px;
+}
+.warning_sub_text {
+                padding:0 60px;
+        }
+.finish_group {
+	margin-top:-180px;
+	.message_left {
+		text-align:right;
+		margin-right:-70px;
+		img {
+			max-height:500px;
+		}
+		.message_button {
+			margin:220px 5px 0px 0px;
+		}
+	}
+	.message_right {
+		text-align:left;
+		margin-left:40px;
+		img {
+			max-height:500px;
+		}
+	}
+
+}
+	.notification_two {
+		font-size:18px;
+		color: rgba(0, 0, 0, 0.8);
+		border: 1px solid #fce473;
+		padding:15px 10px;
+    		margin: 0 -70px 25px -70px;
+	}
+	.checkIt_out {
+		margin-top:-24px;
+		max-height:200px;
+		.arrow_down {
+			font-size:60px;
+			max-height:80px;
+			color:#fce473;
+		}
+	}
+	.get_started {
+		display:flex;
+		margin-top:-70px;
+		margin-left:-80px;
+		max-height:20px;
+		.arrow_left {
+			font-size:80px;
+			margin:30px;
+			color:#42afe3;
+		}
+		.get_started_text {
+			font-size:30px;
+			margin-top:50px;
+		}
+		.arrow_right {
+			font-size:80px;
+			margin:30px;
+			color:#42afe3;
+		}
+	}
+	.get_match {
+		margin-top:70px;
+		.arrow_down_r {
+			font-size:60px;
+			max-height:50px;
+			color:#97cd76;
+		}
+		.matched_button {
+			width:100%;
+			font-size:30px
+		}	
+		.push_fix {
+			float:left;
+			padding-top:20px;
+		}
+	}
+}
+.base_links {
+	padding:20px 0px;
+	&:hover {
+		background:#1f99d3;
+	}
+}
+.base_links_signUp {
+        padding:20px 0px;
+        &:hover {
+                background:#7bbf51;
+        }
 }
 
 /********************************** FLIP AND RADIO BUTTONS *****************************/

@@ -56,18 +56,18 @@ class Navbar extends React.Component {
 
   render() {
     return (
-      <nav className='navbar navbar-sexy'>
+      <nav className='navbar navbar-sexy is-bold'>
         <div className='navbar-left'>
-	    <div className='navbar-item home_bee'><Link to='/'>
+	    <Link to='/'><div className='navbar-item home_bee'>
                 <img src='https://s3-us-west-2.amazonaws.com/buzzm/imgs/buzz_logo/main.png' />
-            </Link></div>
+            </div></Link>
 	    <div className='navbar-item'><Link to='/about'>About</Link></div>
 	    <div className='navbar-item'><Link to='/blog'>Blog</Link></div>
 	    <div className='navbar-item'><Link to='/faq'>FAQ</Link></div>
 	</div>
-	<div classname='navbar-right'>
+	<div className='navbar-right'>
             <div className='navbar-item'>
-		<Link to='/add'><a className='button is-success'>Sign Up</a></Link>
+		<Link to='/add' className='button is-success'>Sign Up</Link>
 	    </div>
 	</div>	    
       </nav>
