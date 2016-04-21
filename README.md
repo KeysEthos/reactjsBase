@@ -1,4 +1,5 @@
 # reactjs-base-site- (init setup)
+# node, express, reactjs, jquery, gulp, bower, socket.io, mongodb
 
 Update linux AWS:
 
