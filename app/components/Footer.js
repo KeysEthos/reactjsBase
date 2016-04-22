@@ -37,18 +37,7 @@ class Footer extends React.Component {
 */}
     return (
       <footer>
-        <div className='container'>
-          <div className='row'>
-            <div className='col-sm-5'>
-              <h3 className='lead'><strong>Information</strong> and <strong>Copyright</strong></h3>
-              <p>Powered by <strong>Buzz App</strong></p>
-              <p>© 2015 Josh Adams & John-Michael Stilb</p>
-            </div>
-            <div className='col-sm-7 hidden-xs'>
-              <h3 className='lead'><strong>Buzz</strong></h3>
-            </div>
-          </div>
-        </div>
+        
       </footer>
     );
   }
